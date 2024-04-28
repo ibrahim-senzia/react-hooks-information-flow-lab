@@ -9,8 +9,10 @@ function Item({ name, category }) {
 
   return (
     <li className={isInCart ? "in-cart" : ""}>
+
       <span>{name}</span>
       <span className="category">{category}</span>
+      
       <button
         className={isInCart ? "remove" : "add"}
         onClick={handleAddToCartClick}
